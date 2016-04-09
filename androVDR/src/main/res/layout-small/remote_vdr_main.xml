@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remote_vdr_main_id"
+    style="?body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        layout="@layout/remote_part_activities" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="54"
+        layout="@layout/remote_part_cursor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        layout="@layout/remote_part_color" />
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="@string/settings_general">
+    <EditTextPreference
+      android:key="name"
+      android:title="@string/settings_name"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="host"
+      android:title="@string/settings_host"
+      android:summary="@string/settings_host_summary"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="port"
+      android:inputType="number"
+      android:title="@string/settings_port"
+      android:summary="@string/settings_port_summary"
+      android:defaultValue="6419"
+      android:maxLength="7" />
+    <EditTextPreference
+      android:key="timeout"
+      android:inputType="number"
+      android:title="@string/settings_timeout"
+      android:defaultValue="7500"
+      android:maxLength="7" />
+    <EditTextPreference
+      android:key="macaddress"
+      android:title="@string/settings_macaddress"
+      android:summary="@string/settings_macaddress_summary"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="broadcastaddress"
+      android:title="@string/settings_broadcastaddress"
+      android:summary="@string/settings_broadcastaddress_summary"
+      android:defaultValue="255.255.255.255" />
+    <EditTextPreference
+      android:key="streamingport"
+      android:inputType="number"
+      android:title="@string/settings_livetv_port"
+      android:summary="@string/settings_livetv_port_summary"
+      android:defaultValue="3000"
+      android:maxLength="7" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_miscellaneous">
+    <EditTextPreference
+      android:key="channellist"
+      android:title="@string/settings_channellist"
+      android:summary="@string/settings_channellist_summary"
+      android:defaultValue="1-20,24" />
+    <EditTextPreference
+      android:key="epgmax"
+      android:inputType="number"
+      android:title="@string/settings_epgmax"
+      android:summary="@string/settings_epgmax_summary"
+      android:defaultValue="30"
+      android:maxLength="7" />
+    <ListPreference
+      android:key="characterset"
+      android:title="@string/settings_characterset"
+      android:summary="@string/settings_characterset_summary"
+      android:defaultValue="ISO-8859-1" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_timer">
+    <CheckBoxPreference
+      android:key="vps"
+      android:title="@string/settings_vps"
+      android:summary="@string/settings_vps_summary"
+      android:defaultValue="false" />
+    <EditTextPreference
+      android:key="margin_start"
+      android:inputType="number"
+      android:title="@string/settings_margin_start"
+      android:defaultValue="5"
+      android:maxLength="7" />
+    <EditTextPreference
+      android:key="margin_stop"
+      android:inputType="number"
+      android:title="@string/settings_margin_stop"
+      android:defaultValue="10"
+      android:maxLength="7" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/livetv">
+    <CheckBoxPreference
+      android:key="extremux"
+      android:title="@string/settings_extremux"
+      android:summary="@string/settings_extremux_summary"
+      android:defaultValue="false" />
+    <EditTextPreference
+      android:key="extremux_command"
+      android:title="@string/settings_extremux_command"
+      android:summary="@string/settings_extremux_command_summary"
+      android:dependency="extremux"
+      android:defaultValue="EXT" />
+    <EditTextPreference
+      android:key="extremux_param"
+      android:title="@string/settings_extremux_param"
+      android:dependency="extremux"
+      android:defaultValue="" />
+    <CheckBoxPreference
+      android:key="generalstreaming"
+      android:title="@string/settings_generalstreaming"
+      android:summary="@string/settings_generalstreaming_summary"
+      android:defaultValue="false" />
+    <EditTextPreference
+      android:key="generalstreaming_url"
+      android:title="@string/settings_generalstreaming_url"
+      android:summary="@string/settings_generalstreaming_url_summary"
+      android:dependency="generalstreaming"
+      android:defaultValue="" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_vdradmin">
+    <CheckBoxPreference
+      android:key="vdradmin"
+      android:title="@string/settings_vdradmin_use"
+      android:summary="@string/settings_vdradmin_use_summary"
+      android:defaultValue="false" />
+    <EditTextPreference
+      android:key="vdradmin_port"
+      android:inputType="number"
+      android:title="@string/settings_vdradmin_port"
+      android:summary="@string/settings_vdradmin_port_summary"
+      android:dependency="vdradmin"
+      android:defaultValue="8001"
+      android:maxLength="7" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_remote">
+    <EditTextPreference
+      android:key="remote_host"
+      android:title="@string/settings_host"
+      android:summary="@string/settings_remote_host_summary"
+      android:defaultValue="router.homelinux.net" />
+    <EditTextPreference
+      android:key="remote_port"
+      android:inputType="number"
+      android:title="@string/settings_remote_port"
+      android:summary="@string/settings_remote_port_summary"
+      android:defaultValue="22"
+      android:maxLength="7" />
+    <EditTextPreference
+      android:key="remote_user"
+      android:title="@string/settings_user"
+      android:defaultValue="abcdef" />
+    <Preference
+      android:key="sshkey_pref"
+      android:title="@string/settings_sshkey"
+      android:summary="@string/settings_sshkey_summary" />
+    <EditTextPreference
+      android:key="remote_timeout"
+      android:inputType="number"
+      android:title="@string/settings_timeout"
+      android:defaultValue="25000"
+      android:maxLength="7" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_remote_local_forwarding_ports">
+    <EditTextPreference
+      android:key="remote_local_port"
+      android:inputType="number"
+      android:title="@string/settings_remote_local_port"
+      android:summary="@string/settings_remote_local_port_summary"
+      android:defaultValue="35550"
+      android:maxLength="7" />
+    <EditTextPreference
+      android:key="remote_streaming_port"
+      android:inputType="number"
+      android:title="@string/settings_remote_local_streaming_port"
+      android:summary="@string/settings_remote_local_streaming_port_summary"
+      android:dependency="extremux"
+      android:defaultValue="35551"
+      android:maxLength="7" />
+    <EditTextPreference
+      android:key="remote_vdradmin_port"
+      android:inputType="number"
+      android:title="@string/settings_remote_local_vdradmin_port"
+      android:summary="@string/settings_remote_local_vdradmin_port_summary"
+      android:dependency="vdradmin"
+      android:defaultValue="35552"
+      android:maxLength="7" />
+  </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'androvdr'
+            keyPassword 'androvdr'
+            storeFile file('/home/cheffe/Android/Keystore/androvdr.jks')
+            storePassword 'androvdr'
+        }
+    }
+    compileSdkVersion 14
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "de.androvdr"
+        minSdkVersion 4
+        targetSdkVersion 14
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':library')
+}

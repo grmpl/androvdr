@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="weekday">
+    <item>Sonntag</item>
+    <item>Montag</item>
+    <item>Dienstag</item>
+    <item>Mittwoch</item>
+    <item>Donnerstag</item>
+    <item>Freitag</item>
+    <item>Samstag</item>
+  </string-array>
+
+  <string-array name="logLevel">
+    <item>Off</item>
+    <item>System</item>
+    <item>SDCard</item>
+    <item>SDCard All</item>
+  </string-array>
+
+  <string-array name="colors">
+    <item>Keine</item>
+    <item>Rot</item>
+    <item>Blau</item>
+    <item>Grün</item>
+    <item>Schwarz</item>
+    <item>Weiß</item>
+    <item>Grau</item>
+    <item>Cyan</item>
+    <item>Magenta</item>
+    <item>Gelb</item>
+    <item>Hellgrau</item>
+    <item>Dunkelgrau</item>
+  </string-array>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:title="@string/switch_channel"
+    android:id="@+id/cm_switch" />
+  <item
+    android:title="@string/programoverview"
+    android:id="@+id/cm_overview" />
+  <item
+    android:title="@string/programoverviewfull"
+    android:id="@+id/cm_overviewfull" />
+  <item
+    android:title="@string/record"
+    android:id="@+id/cm_record" />
+  <item
+    android:title="@string/remotecontrol"
+    android:id="@+id/cm_remote" />
+  <item
+    android:id="@+id/cm_livetv"
+    android:title="@string/livetv" />
+</menu>

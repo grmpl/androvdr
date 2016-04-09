@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Theme / Layout FvK -->
+    <style name="header">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/header_background_dark</item>
+    </style>
+
+    <style name="footer" parent="header">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="header_light" parent="header">
+        <item name="android:background">@drawable/header_background_light</item>
+    </style>
+
+    <style name="footer_light" parent="footer">
+        <item name="android:background">@drawable/header_background_light</item>
+    </style>
+
+    <style name="body">
+        <item name="android:background">@drawable/keyboard_background</item>
+        <item name="android:paddingBottom">2dip</item>
+    </style>
+
+    <style name="body_light" parent="body">
+        <item name="android:background">@drawable/keyboard_background_light</item>
+    </style>
+
+    <style name="detailsElementBackground_dark">
+        <item name="android:background">@drawable/panel_background_dark</item>
+    </style>
+
+    <style name="detailsElementBackground_light">
+        <item name="android:background">@drawable/panel_background_light</item>
+    </style>
+
+    <style name="infoarea">
+        <item name="android:background">@drawable/btn_keyboard_key_normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="infoarea_light" parent="infoarea">
+        <item name="android:background">@drawable/btn_keyboard_key_normal_light</item>
+    </style>
+
+    <style name="infoarea_text" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_remote</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:longClickable">true</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="button_light" parent="button">
+        <item name="android:background">@drawable/btn_remote_light</item>
+    </style>
+
+    <style name="buttonUp" parent="@style/button">
+        <item name="android:src">@drawable/ic_arrow_up</item>
+    </style>
+
+    <style name="buttonUp_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_arrow_up</item>
+    </style>
+
+    <style name="buttonDown" parent="@style/button">
+        <item name="android:src">@drawable/ic_arrow_down</item>
+    </style>
+
+    <style name="buttonDown_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_arrow_down</item>
+    </style>
+
+    <style name="buttonLeft" parent="@style/button">
+        <item name="android:src">@drawable/ic_arrow_left</item>
+    </style>
+
+    <style name="buttonLeft_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_arrow_left</item>
+    </style>
+
+    <style name="buttonRight" parent="@style/button">
+        <item name="android:src">@drawable/ic_arrow_right</item>
+    </style>
+
+    <style name="buttonRight_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_arrow_right</item>
+    </style>
+
+    <style name="buttonRewind" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_seek_backward</item>
+    </style>
+
+    <style name="buttonRewind_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_seek_backward</item>
+    </style>
+
+    <style name="buttonForward" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_seek_forward</item>
+    </style>
+
+    <style name="buttonForward_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_seek_forward</item>
+    </style>
+
+    <style name="buttonSkipForward" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_skip_forward</item>
+    </style>
+
+    <style name="buttonSkipForward_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_skip_forward</item>
+    </style>
+
+    <style name="buttonSkipBackward" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_skip_backward</item>
+    </style>
+
+    <style name="buttonSkipBackward_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_skip_backward</item>
+    </style>
+
+    <style name="buttonStop" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_playback_stop</item>
+    </style>
+
+    <style name="buttonStop_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_playback_stop</item>
+    </style>
+
+    <style name="buttonPause" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_playback_pause</item>
+    </style>
+
+    <style name="buttonPause_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_playback_pause</item>
+    </style>
+
+    <style name="buttonStart" parent="@style/button">
+        <item name="android:src">@drawable/ic_tango_playback_start</item>
+    </style>
+
+    <style name="buttonStart_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_tango_playback_start</item>
+    </style>
+
+    <style name="buttonPowerOn" parent="@style/button">
+        <item name="android:src">@drawable/ic_power_on</item>
+    </style>
+
+    <style name="buttonPowerOn_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_power_on</item>
+    </style>
+
+    <style name="buttonPowerOff" parent="@style/button">
+        <item name="android:src">@drawable/ic_power</item>
+    </style>
+
+    <style name="buttonPowerOff_light" parent="@style/button_light">
+        <item name="android:src">@drawable/ic_power</item>
+    </style>
+
+</resources>

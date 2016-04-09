@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="weekday">
+    <item>Sunday</item>
+    <item>Monday</item>
+    <item>Tuesday</item>
+    <item>Wednesday</item>
+    <item>Thursday</item>
+    <item>Friday</item>
+    <item>Saturday</item>
+  </string-array>
+
+  <string-array name="logLevel">
+    <item>Off</item>
+    <item>System</item>
+    <item>SDCard</item>
+    <item>SDCard All</item>
+  </string-array>
+  <string-array name="logLevel_values">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+  </string-array>
+
+  <string-array name="slf4jLevel">
+    <item>Trace</item>
+    <item>Debug</item>
+    <item>Info</item>
+    <item>Warning</item>
+    <item>Error</item>
+  </string-array>
+  <string-array name="slf4jLevel_values">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+  </string-array>
+  
+  <string-array name="textsizeoffset">
+    <item>-3</item>
+    <item>-2</item>
+    <item>-1</item>
+    <item>---</item>
+    <item>+1</item>
+    <item>+2</item>
+    <item>+3</item>
+    <item>+4</item>
+    <item>+5</item>
+    <item>+6</item>
+    <item>+7</item>
+    <item>+8</item>
+    <item>+9</item>
+    <item>+10</item>
+  </string-array>
+  <string-array name="textsizeoffset_values">
+    <item>-3</item>
+    <item>-2</item>
+    <item>-1</item>
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+  </string-array>
+
+  <string-array name="colors">
+    <item>None</item>
+    <item>Red</item>
+    <item>Blue</item>
+    <item>Green</item>
+    <item>Black</item>
+    <item>White</item>
+    <item>Gray</item>
+    <item>Cyan</item>
+    <item>Magenta</item>
+    <item>Yellow</item>
+    <item>Lightgray</item>
+    <item>Darkgray</item>
+  </string-array>
+  <string-array name="color_values">
+    <item>none</item>
+    <item>red</item>
+    <item>blue</item>
+    <item>green</item>
+    <item>black</item>
+    <item>white</item>
+    <item>gray</item>
+    <item>cyan</item>
+    <item>magenta</item>
+    <item>yellow</item>
+    <item>lightgray</item>
+    <item>darkgray</item>
+  </string-array>
+  
+  <string-array name="livetv_streamformat">
+    <item>TS</item>
+    <item>PES</item>
+    <item>ES</item>
+    <item>PS</item>
+  </string-array>
+  <string-array name="livetv_streamformat_values">
+    <item>TS</item>
+    <item>PES</item>
+    <item>ES</item>
+    <item>PS</item>
+  </string-array>
+</resources>

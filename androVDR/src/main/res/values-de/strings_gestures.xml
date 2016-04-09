@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2009 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    
+    <!-- Title, name of the activity used to create a gesture 
+         and displayed in menu to start the activity to create a gesture -->
+    <string name="label_create_gesture">Gesten erstellen</string>
+
+    <!-- Buttons -->
+    <skip />
+    <!-- Label, button used to add a gesture -->
+    <string name="button_add">Geste hinzufuegen</string>
+    <!-- Label, button used to reload all gestures -->
+    <string name="button_reload">neu Einlesen</string>
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <string name="button_discard">Verwerfen</string>
+    <!-- Label, button used to save a gesture newly created -->
+    <string name="button_done">Erledigt</string>
+    
+    <!-- Gestures -->
+    <skip />
+    <!-- Label, tell the user to enter a gesture -->
+    <string name="prompt">Bitte hier die Geste fuer den VDR eingeben</string>
+    <!-- Label, displayed in menu  to start the activity for enter gestures -->
+    <string name="gestures">mit Gesten steuern</string>
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <string name="prompt_gesture_name">Name</string>
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <string name="error_missing_name">Bitte hier Name der Geste eingeben</string>
+    <!-- success message, tells the user where the gesture was saved -->
+    <string name="save_success">Die Geste wurde in %s gespeichert</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="rename_action">OK</string>
+    <!-- Buttons in Rename gesture dialog box -->
+    <string name="cancel_action">Abbruch</string>
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <string name="gestures_loading">Lade Gesten ...</string>
+    <!-- Message displayed when the user has no gestures -->
+    <string name="gestures_empty">Keine Gesten vorhanden</string>
+    <!-- Title of the screen used to view/manage gestures -->
+    <string name="gestures_activity">Gestensteuerung</string>
+    <!-- Noun, menu item used to rename a gesture -->
+    <string name="gestures_rename">Umbenennen</string>
+    <!-- Noun, menu item used to remove a gesture -->
+    <string name="gestures_delete">Loeschen</string>
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <string name="gestures_delete_success">Geste geloescht</string>
+    <!-- Title of dialog box -->
+    <string name="gestures_rename_title">Geste umbenannt</string>
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <string name="gestures_rename_label">Name der Geste</string>
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures -->
+    <string name="gestures_error_loading">Kann %s nicht laden. Ist die SD card gemountet?</string>
+    
+    <string name="no_gestures">"Es sind noch keine Gesturen angelegt. Bitte zuerst anlegen"</string>
+</resources>

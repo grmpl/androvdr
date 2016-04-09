@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remote_vdr_main_id"
+    style="?body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="92" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        layout="@layout/remote_part_power_activities" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="48"
+        android:orientation="horizontal" >
+
+        <!-- User -->
+        <TableLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="17" >
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user1"
+                    android:text="@string/remote_user1" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user2"
+                    android:text="@string/remote_user2" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user3"
+                    android:text="@string/remote_user3" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user4"
+                    android:text="@string/remote_user4" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Numpad / Cursor ... -->
+        <include
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="83"
+            layout="@layout/remote_part_numpad_cursor_misc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="24"
+        android:orientation="horizontal" >
+
+        <!-- Play -->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/remote_part_play_skip_rec"
+            android:paddingRight="1dip" />
+
+        <!-- Color / Misc Buttons -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="1dip" >
+
+            <!-- Color -->
+            <include
+                android:id="@id/buttonrow_color"
+                android:layout_weight="1"
+                layout="@layout/remote_part_color" />
+
+            <!-- Misc -->
+            <include
+                android:id="@id/buttonrow_commands"
+                android:layout_weight="1"
+                layout="@layout/remote_part_commands" />
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

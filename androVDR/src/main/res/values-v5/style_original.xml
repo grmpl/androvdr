@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="button.Original" parent="@android:style/Widget.Button">
+    <item name="android:layout_width">63dip</item>
+    <item name="android:layout_height">60dip</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:scaleType">center</item>
+    <item name="android:longClickable">true</item>
+  </style>
+  <style name="buttonSmall.Original" parent="button.Original">
+    <item name="android:layout_height">58dip</item>
+  </style>
+</resources>

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 4
+        targetSdkVersion 4
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('svdrp4j-1.1.0.jar')
+    compile files('slf4j-api-1.7.21.jar')
+    compile files('jsch-0.1.53.jar')
+    compile files('acra-4.5.0.jar')
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.androvdr.widget.TextResizeButton 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?button"
+    android:layout_width="200dip"
+    android:layout_height="100dip"
+    android:text="@string/remote_commands"
+    android:textSize="22dip" />

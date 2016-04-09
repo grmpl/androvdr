@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:key="screen_main">
+  <PreferenceCategory
+    android:key="category_general"
+    android:title="@string/settings_general">
+    <PreferenceScreen
+      android:title="@string/settings_devices"
+      android:summary="@string/settings_devices_summary">
+      <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="de.androvdr"
+        android:targetClass="de.androvdr.activities.DevicesActivity"
+        android:data="" />
+    </PreferenceScreen>
+    <CheckBoxPreference
+      android:key="standbyNo"
+      android:title="@string/settings_standbymode"
+      android:summary="@string/settings_standbymode_summary"
+      android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="hapticFeedback"
+      android:title="@string/settings_hapticfeedback"
+      android:summary="@string/settings_hapticfeedback_summary"
+      android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="keyguard"
+      android:title="@string/settings_keyguard"
+      android:summary="@string/settings_keyguard_summary"
+      android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="swipeToFinish"
+      android:title="@string/settings_swipetofinish"
+      android:summary="@string/settings_swipetofinish_summary"
+      android:defaultValue="false" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:key="category_volume"
+    android:title="@string/settings_volume">
+    <CheckBoxPreference
+      android:key="volumeVDR"
+      android:title="@string/settings_volume_vdr"
+      android:summary="@string/settings_volume_vdr_summary"
+      android:defaultValue="false" />
+    <ListPreference
+      android:key="volumeDevice"
+      android:title="@string/settings_volume_device"
+      android:defaultValue="-1" />
+    <ListPreference
+      android:key="volumeUp"
+      android:title="@string/settings_volume_up_command"
+      android:defaultValue="" />
+    <ListPreference
+      android:key="volumeDown"
+      android:title="@string/settings_volume_down_command"
+      android:defaultValue="" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:key="category_appearance"
+    android:title="@string/settings_appearance">
+    <CheckBoxPreference
+      android:key="alternateLayout"
+      android:title="@string/settings_alternate_layout"
+      android:defaultValue="true" />
+    <CheckBoxPreference
+      android:key="blackOnWhite"
+      android:title="@string/settings_background"
+      android:summary="@string/settings_background_summary"
+      android:defaultValue="false" />
+    <CheckBoxPreference
+      android:key="useLogos"
+      android:title="@string/settings_logos"
+      android:summary="@string/settings_logos_summary"
+      android:defaultValue="false" />
+    <ListPreference
+      android:key="logoBackgroundColor"
+      android:title="@string/settings_logo_backgroundcolor"
+      android:defaultValue="none"
+      android:dependency="useLogos"
+      android:entries="@array/colors"
+      android:entryValues="@array/color_values" />
+    <ListPreference
+      android:key="textSizeOffset"
+      android:title="@string/settings_textsizeoffset"
+      android:summary="@string/settings_textsizeoffset_summary"
+      android:defaultValue="0"
+      android:entries="@array/textsizeoffset"
+      android:entryValues="@array/textsizeoffset_values" />
+    <CheckBoxPreference
+      android:key="showDiskStatus"
+      android:title="@string/settings_diskstatus"
+      android:summary="@string/settings_diskstatus_summary" />
+    <CheckBoxPreference
+      android:key="showCurrentChannel"
+      android:title="@string/settings_current_channelname"
+      android:summary="@string/settings_current_channelname_summary" />
+    <CheckBoxPreference
+      android:key="detailsLeft"
+      android:title="@string/settings_detailsleft"
+      android:summary="@string/settings_detailsleft_summary" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_epgsearch">
+    <CheckBoxPreference
+      android:key="epgsearch_title"
+      android:title="@string/settings_epgsearch_title"
+      android:defaultValue="true" />
+    <CheckBoxPreference
+      android:key="epgsearch_subtitle"
+      android:title="@string/settings_epgsearch_subtitle"
+      android:defaultValue="true" />
+    <CheckBoxPreference
+      android:key="epgsearch_description"
+      android:title="@string/settings_epgsearch_description"
+      android:defaultValue="false" />
+    <EditTextPreference
+      android:key="epgsearch_max"
+      android:inputType="number"
+      android:title="@string/settings_epgsearch_max"
+      android:summary="@string/settings_epgsearch_max_summary"
+      android:defaultValue="30"
+      android:maxLength="7" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/livetv">
+    <CheckBoxPreference
+      android:key="livetv_enabled"
+      android:title="@string/settings_livetv"
+      android:summary="@string/settings_livetv_summary"
+      android:defaultValue="false" />
+    <ListPreference
+      android:key="livetv_streamformat"
+      android:title="@string/settings_livetv_streamformat"
+      android:defaultValue="PES"
+      android:dependency="livetv_enabled"
+      android:entries="@array/livetv_streamformat"
+      android:entryValues="@array/livetv_streamformat_values" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/settings_miscellaneous">
+    <ListPreference
+      android:key="logLevel"
+      android:title="@string/settings_logging"
+      android:summary="@string/settings_logging_summary"
+      android:defaultValue="0"
+      android:entries="@array/logLevel"
+      android:entryValues="@array/logLevel_values" />
+    <ListPreference
+      android:key="slf4jLevel"
+      android:title="@string/settings_logging_level"
+      android:summary="@string/settings_logging_level_summary"
+      android:defaultValue="5"
+      android:dependency="logLevel"
+      android:entries="@array/slf4jLevel"
+      android:entryValues="@array/slf4jLevel_values" />
+    <CheckBoxPreference android:key="acra.enable"
+      android:title="@string/settings_acra"
+      android:summary="@string/settings_acra_summary"
+      android:defaultValue="true"/>
+    <CheckBoxPreference
+      android:key="deleteRecordingIds"
+      android:title="@string/settings_recordingindex"
+      android:summary="@string/settings_recordingindex_summary"
+      android:defaultValue="false" />
+  </PreferenceCategory>
+</PreferenceScreen>

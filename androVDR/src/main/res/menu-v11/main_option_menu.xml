@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/androvdr_settings"
+    android:title="@string/main_settings"
+    android:icon="@drawable/ic_menu_preferences" />
+  <item
+    android:id="@+id/androvdr_switch_vdr"
+    android:title="VDR"
+    android:icon="@drawable/ic_menu_goto"
+    android:showAsAction="ifRoom|withText" />
+  <item
+    android:id="@+id/androvdr_gestures"
+    android:title="@string/main_gestures"
+    android:icon="@drawable/ic_menu_directions"
+    android:showAsAction="ifRoom|withText" />
+  <item
+    android:id="@+id/androvdr_internet"
+    android:icon="@drawable/ic_menu_login" />
+  <item
+    android:id="@+id/androvdr_vdradmin"
+    android:title="@string/settings_vdradmin"
+    android:icon="@drawable/ic_menu_set_as"
+    android:showAsAction="ifRoom|withText" />
+  <item
+    android:id="@+id/androvdr_generalstreaming"
+    android:title="@string/settings_generalstreaming"
+    android:icon="@drawable/ic_menu_view" />
+  <item
+    android:id="@+id/androvdr_about"
+    android:title="@string/main_about"
+    android:icon="@drawable/ic_menu_info_details" />
+  <item
+    android:id="@+id/androvdr_exit"
+    android:title="@string/main_exit"
+    android:icon="@drawable/ic_lock_power_off" />
+</menu>

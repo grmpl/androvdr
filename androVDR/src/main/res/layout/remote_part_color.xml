@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip" >
+
+    <TableRow
+        android:id="@+id/buttonrow_color"
+        android:layout_weight="1" >
+
+        <ImageButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="18dip"
+            android:paddingLeft="24dip"
+            android:paddingRight="24dip"
+            android:paddingTop="18dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/rot"
+            android:tag="VDR.red"
+            android:text="Red" />
+
+        <ImageButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="18dip"
+            android:paddingLeft="24dip"
+            android:paddingRight="24dip"
+            android:paddingTop="18dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/gruen"
+            android:tag="VDR.green"
+            android:text="Green" />
+
+        <ImageButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="18dip"
+            android:paddingLeft="24dip"
+            android:paddingRight="24dip"
+            android:paddingTop="18dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/gelb"
+            android:tag="VDR.yellow"
+            android:text="Yellow" />
+
+        <ImageButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="18dip"
+            android:paddingLeft="24dip"
+            android:paddingRight="24dip"
+            android:paddingTop="18dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/blau"
+            android:tag="VDR.blue"
+            android:text="Blue" />
+    </TableRow>
+
+</TableLayout>

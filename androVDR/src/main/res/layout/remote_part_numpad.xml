@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip" >
+
+    <TableRow android:layout_weight="1" >
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.menu"
+            android:text="@string/remote_menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.1"
+            android:text="1" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.2"
+            android:text="2" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.3"
+            android:text="3" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.4"
+            android:text="4" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.5"
+            android:text="5" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.6"
+            android:text="6" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.back"
+            android:text="@string/remote_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.7"
+            android:text="7" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.8"
+            android:text="8" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.9"
+            android:text="9" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.0"
+            android:text="0" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </TableRow>
+
+</TableLayout>

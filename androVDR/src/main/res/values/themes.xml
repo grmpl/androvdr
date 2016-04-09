@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Theme" parent="android:Theme">
+    <item name="header">@style/header</item>
+    <item name="footer">@style/footer</item>
+    <item name="body">@style/body</item>
+    <item name="detailsElementBackground">@style/detailsElementBackground_dark</item>
+    <item name="infoarea">@style/infoarea</item>
+    <item name="infoarea_text">@style/infoarea_text</item>
+    <item name="button">@style/button</item>
+    <item name="buttonUp">@style/buttonUp</item>
+    <item name="buttonDown">@style/buttonDown</item>
+    <item name="buttonLeft">@style/buttonLeft</item>
+    <item name="buttonRight">@style/buttonRight</item>
+    <item name="buttonRewind">@style/buttonRewind</item>
+    <item name="buttonForward">@style/buttonForward</item>
+    <item name="buttonSkipForward">@style/buttonSkipForward</item>
+    <item name="buttonSkipBackward">@style/buttonSkipBackward</item>
+    <item name="buttonStart">@style/buttonStart</item>
+    <item name="buttonStop">@style/buttonStop</item>
+    <item name="buttonPause">@style/buttonPause</item>
+    <item name="buttonPowerOn">@style/buttonPowerOn</item>
+    <item name="buttonPowerOff">@style/buttonPowerOff</item>
+  </style>
+  <style name="Theme.Light" parent="android:Theme.Light">
+    <item name="header">@style/header_light</item>
+    <item name="footer">@style/footer_light</item>
+    <item name="body">@style/body_light</item>
+    <item name="detailsElementBackground">@style/detailsElementBackground_light</item>
+    <item name="infoarea">@style/infoarea_light</item>
+    <item name="infoarea_text">@style/infoarea_text</item>
+    <item name="button">@style/button_light</item>
+    <item name="buttonUp">@style/buttonUp_light</item>
+    <item name="buttonDown">@style/buttonDown_light</item>
+    <item name="buttonLeft">@style/buttonLeft_light</item>
+    <item name="buttonRight">@style/buttonRight_light</item>
+    <item name="buttonRewind">@style/buttonRewind_light</item>
+    <item name="buttonForward">@style/buttonForward_light</item>
+    <item name="buttonSkipForward">@style/buttonSkipForward_light</item>
+    <item name="buttonSkipBackward">@style/buttonSkipBackward_light</item>
+    <item name="buttonStart">@style/buttonStart_light</item>
+    <item name="buttonStop">@style/buttonStop_light</item>
+    <item name="buttonPause">@style/buttonPause_light</item>
+    <item name="buttonPowerOn">@style/buttonPowerOn_light</item>
+    <item name="buttonPowerOff">@style/buttonPowerOff_light</item>
+  </style>
+  <style name="Theme.Original" parent="android:Theme">
+    <item name="header">@style/header</item>
+    <item name="footer">@style/footer</item>
+    <item name="body">@style/body.Original</item>
+    <item name="detailsElementBackground">@style/detailsElementBackground_dark</item>
+    <item name="button">@style/button.Original</item>
+    <item name="buttonSmall">@style/buttonSmall.Original</item>
+    <item name="buttonLarge">@style/buttonLarge.Original</item>
+    <item name="buttonSquare">@style/buttonSquare.Original</item>
+    <item name="buttonCursor">@style/buttonCursor.Original</item>
+    <item name="buttonCut">@style/buttonCut.Original</item>
+    <item name="spacer">@style/spacer.Original</item>
+    <item name="spacerButton">@style/spacer.Original</item>
+  </style>
+  <style name="Theme.Original.Light" parent="android:Theme.Light">
+    <item name="header">@style/header_light</item>
+    <item name="footer">@style/footer_light</item>
+    <item name="body">@style/body.Original</item>
+    <item name="detailsElementBackground">@style/detailsElementBackground_light</item>
+    <item name="button">@style/button.Original</item>
+    <item name="buttonSmall">@style/buttonSmall.Original</item>
+    <item name="buttonLarge">@style/buttonLarge.Original</item>
+    <item name="buttonSquare">@style/buttonSquare.Original</item>
+    <item name="buttonCursor">@style/buttonCursor.Original</item>
+    <item name="buttonCut">@style/buttonCut.Original</item>
+    <item name="spacer">@style/spacer.Original</item>
+    <item name="spacerButton">@style/spacer.Original</item>
+  </style>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip" >
+
+    <TableRow
+        android:id="@+id/buttonrow_user"
+        android:layout_weight="1" >
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="VDR.user1"
+            android:text="@string/remote_user1" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="VDR.user2"
+            android:text="@string/remote_user2" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="VDR.user3"
+            android:text="@string/remote_user3" />
+    </TableRow>
+
+</TableLayout>

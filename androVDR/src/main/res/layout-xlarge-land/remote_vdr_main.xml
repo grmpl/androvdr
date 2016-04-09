@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remote_vdr_main_id"
+    style="?body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="11"
+        layout="@layout/remote_part_power_activities" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="44"
+        android:orientation="horizontal" >
+
+        <!-- User -->
+
+        <TableLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" >
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user1"
+                    android:text="@string/remote_user1" />
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user5"
+                    android:text="@string/remote_user5" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user2"
+                    android:text="@string/remote_user2" />
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user6"
+                    android:text="@string/remote_user6" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user3"
+                    android:text="@string/remote_user3" />
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user7"
+                    android:text="@string/remote_user7" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user4"
+                    android:text="@string/remote_user4" />
+
+                <de.androvdr.widget.TextResizeButton
+                    style="?button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="VDR.user8"
+                    android:text="@string/remote_user8" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Numpad / Cursor ... -->
+
+        <include
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            layout="@layout/remote_part_numpad_cursor_misc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="11"
+        android:orientation="horizontal" >
+
+        <!-- Misc Buttons -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/remote_part_commands" />
+
+        <!-- Color Buttons -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/remote_part_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="22"
+        android:orientation="horizontal" >
+
+        <!-- Info Area -->
+
+        <LinearLayout
+            android:id="@+id/remote_infoarea"
+            style="?infoarea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:tag="Activity.de.androvdr.activities.EpgsdataActivity" >
+
+            <!-- Sensors -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="75"
+                android:paddingBottom="6dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip" >
+
+                <LinearLayout
+                    android:id="@+id/remote_channel_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/channelnumber"
+                        style="?infoarea_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="18dip"
+                        android:textSize="32dip"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/channellogoholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/channellogo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="18dip"
+                            android:paddingTop="10dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <de.androvdr.widget.TextResizeView
+                            android:id="@+id/channeltext"
+                            style="?infoarea_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="46"
+                            android:text="N/A"
+                            android:textSize="32dip"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/channelprogress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dip"
+                            android:layout_gravity="center_vertical"
+                            android:indeterminate="false" />
+
+                        <TableLayout
+                            android:id="@+id/channelprogram"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="54"
+                            android:paddingTop="2dip" >
+
+                            <TableRow android:id="@+id/channelnowplayingrow" >
+
+                                <TextView
+                                    android:id="@+id/channelnowplayingtime"
+                                    style="?infoarea_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14dip"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/channelnowplaying"
+                                    style="?infoarea_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:textSize="14dip"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow android:id="@+id/channelnextplayingrow" >
+
+                                <TextView
+                                    android:id="@+id/channelnextplayingtime"
+                                    style="?infoarea_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14dip"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/channelnextplaying"
+                                    style="?infoarea_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="6dip"
+                                    android:textSize="14dip"
+                                    android:textStyle="bold" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Disk Status -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="25"
+                android:paddingBottom="6dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip" >
+
+                <ProgressBar
+                    android:id="@+id/remote_diskstatus_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dip"
+                    android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:id="@+id/remote_diskstatus_values"
+                    style="?infoarea_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/remote_diskstatus_progressbar"
+                    android:layout_centerHorizontal="true"
+                    android:text="N/A"
+                    android:textSize="14dip"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Play -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/remote_part_play_skip_rec" />
+    </LinearLayout>
+
+</LinearLayout>

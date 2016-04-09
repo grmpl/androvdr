@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip">
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- NumPad (1) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.1"
+            android:text="1" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.2"
+            android:text="2" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.3"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Menu / Back (1) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.menu"
+            android:text="@string/remote_menu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Cursor (1) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <de.androvdr.widget.SquareImageButton
+            style="?buttonUp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.up" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Channels (1) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.chan_up"
+            android:text="@string/remote_chan_up" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Volume (1) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.vol_up"
+            android:text="@string/remote_vol_up" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- NumPad (2) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.4"
+            android:text="4" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.5"
+            android:text="5" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.6"
+            android:text="6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Menu / Back (2) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Cursor (2) -->
+
+        <de.androvdr.widget.SquareImageButton
+            style="?buttonLeft"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.left" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.ok"
+            android:text="OK" />
+
+        <de.androvdr.widget.SquareImageButton
+            style="?buttonRight"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.right" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Channels (2) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.prev_chan"
+            android:text="@string/remote_chan_last" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Volume (2) -->
+
+        <de.androvdr.widget.SquareImageButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_lock_ringer_off"
+            android:tag="VDR.mute" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- NumPad (3) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.7"
+            android:text="7" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.8"
+            android:text="8" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.9"
+            android:text="9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Menu / Back (3) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.back"
+            android:text="@string/remote_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Cursor (3) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <de.androvdr.widget.SquareImageButton
+            style="?buttonDown"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.down" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Channels (3) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.chan_down"
+            android:text="@string/remote_chan_down" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Volume (3) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.vol_down"
+            android:text="@string/remote_vol_down" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- NumPad (4) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.0"
+            android:text="0" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Menu / Back (4) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Cursor (4) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Channels (4) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Volume (4) -->
+
+        <de.androvdr.widget.SquareButton
+            style="?button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </TableRow>
+
+</TableLayout>

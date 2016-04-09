@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip" >
+
+    <TableRow android:layout_weight="1" >
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="VDR.info"
+            android:text="@string/remote_info" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="VDR.subtitles"
+            android:text="@string/remote_subtitles" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="VDR.setup"
+            android:text="@string/remote_setup" />
+    </TableRow>
+
+    <include 
+        android:id="@id/buttonrow_user"
+        layout="@layout/remote_part_user"
+        android:layout_weight="1" />
+
+</TableLayout>

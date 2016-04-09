@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+ 	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:title="@string/rec_play"
+		android:id="@+id/rec_play"/>
+	<item 
+		android:title="@string/rec_play_start"
+		android:id="@+id/rec_play_start"/>
+	<item 
+		android:title="@string/rec_delete"
+		android:id="@+id/rec_delete"/>
+	<item
+		android:title="@string/remotecontrol"
+		android:id="@+id/rec_remote"/>
+</menu>

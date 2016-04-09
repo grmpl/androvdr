@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/tab1"
+  android:tag="RC"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?body"
+    android:id="@+id/tab1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="RC">
+    <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TableRow>
+        <ImageButton
+          style="?button"
+          android:src="@drawable/ic_power_on"
+          android:tag="VDR.wol|VDR.wolinternet" />
+        <Button
+          style="?button"
+          android:text="@string/remote_channels_short"
+          android:tag="Activity.de.androvdr.activities.ChannelsActivity|VDR.kanal" />
+        <Button
+          style="?button"
+          android:text="@string/remote_timer"
+          android:tag="Activity.de.androvdr.activities.TimersActivity|VDR.timer" />
+        <Button
+          style="?button"
+          android:text="@string/remote_schedule_short"
+          android:tag="Activity.de.androvdr.activities.EpgsdataActivity|VDR.schedule" />
+        <TextView
+          style="?spacer"
+          android:layout_weight="1" />
+        <ImageButton
+          style="?button"
+          android:src="@drawable/ic_power"
+          android:tag="VDR.off" />
+      </TableRow>
+    </TableLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="10dip" />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TableRow>
+          <Button
+            style="?buttonSquare"
+            android:text="1"
+            android:tag="VDR.1" />
+          <Button
+            style="?buttonSquare"
+            android:text="2"
+            android:tag="VDR.2" />
+          <Button
+            style="?buttonSquare"
+            android:text="3"
+            android:tag="VDR.3" />
+        </TableRow>
+        <TableRow>
+          <Button
+            style="?buttonSquare"
+            android:text="4"
+            android:tag="VDR.4" />
+          <Button
+            style="?buttonSquare"
+            android:text="5"
+            android:tag="VDR.5" />
+          <Button
+            style="?buttonSquare"
+            android:text="6"
+            android:tag="VDR.6" />
+        </TableRow>
+        <TableRow>
+          <Button
+            style="?buttonSquare"
+            android:text="7"
+            android:tag="VDR.7" />
+          <Button
+            style="?buttonSquare"
+            android:text="8"
+            android:tag="VDR.8" />
+          <Button
+            style="?buttonSquare"
+            android:text="9"
+            android:tag="VDR.9" />
+        </TableRow>
+        <TableRow>
+          <TextView
+            style="?spacerButton" />
+          <Button
+            style="?buttonSquare"
+            android:text="0"
+            android:tag="VDR." />
+          <TextView
+            style="?spacerButton" />
+        </TableRow>
+      </TableLayout>
+      <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+          <ImageButton
+            style="?buttonSquare"
+            android:src="@drawable/ic_menu_back"
+            android:tag="VDR.back" />
+          <TextView
+            style="?spacer"
+            android:layout_weight="1" />
+          <ImageButton
+            style="?buttonSquare"
+            android:src="@drawable/ic_menu_50x50"
+            android:tag="VDR.menu" />
+        </TableRow>
+        <TableRow>
+          <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="3"
+            android:paddingTop="18dip">
+            <TableRow>
+              <TextView />
+              <ImageButton
+                style="?buttonCursor"
+                android:src="@drawable/pfeil_o_30x30"
+                android:tag="VDR.up" />
+            </TableRow>
+            <TableRow>
+              <ImageButton
+                style="?buttonCursor"
+                android:src="@drawable/pfeil_l_30x30"
+                android:tag="VDR.left" />
+              <Button
+                style="?buttonCursor"
+                android:text="ok"
+                android:tag="VDR.ok" />
+              <ImageButton
+                style="?buttonCursor"
+                android:src="@drawable/pfeil_r_30x30"
+                android:tag="VDR.right" />
+            </TableRow>
+            <TableRow>
+              <TextView />
+              <ImageButton
+                style="?buttonCursor"
+                android:src="@drawable/pfeil_u_30x30"
+                android:tag="VDR.down" />
+            </TableRow>
+          </TableLayout>
+        </TableRow>
+      </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="10dip" />
+    <TableLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TableRow>
+        <ImageButton
+          style="?buttonSmall"
+          android:text="Red"
+          android:layout_weight="1"
+          android:src="@drawable/rot"
+          android:tag="VDR.red" />
+        <ImageButton
+          style="?buttonSmall"
+          android:text="Green"
+          android:layout_weight="1"
+          android:src="@drawable/gruen"
+          android:tag="VDR.green" />
+        <ImageButton
+          style="?buttonSmall"
+          android:text="Yellow"
+          android:layout_weight="1"
+          android:src="@drawable/gelb"
+          android:tag="VDR.yellow" />
+        <ImageButton
+          style="?buttonSmall"
+          android:text="Blue"
+          android:layout_weight="1"
+          android:src="@drawable/blau"
+          android:tag="VDR.blue" />
+      </TableRow>
+    </TableLayout>
+  </LinearLayout>
+</ScrollView>

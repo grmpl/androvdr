@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/cm_search"
+    android:title="@string/search"
+    android:icon="@drawable/ic_menu_search"
+    android:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/cm_whats_on"
+    android:title="@string/channels_whats_on"
+    android:icon="@drawable/ic_menu_day"
+    android:showAsAction="ifRoom" />
+</menu>

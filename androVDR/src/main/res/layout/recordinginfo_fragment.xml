@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reci"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/reci_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dip" >
+
+            <TextView
+                android:id="@+id/reci_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/reci_shorttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_title"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/reci_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_shorttext"
+                android:paddingTop="6dip" />
+
+            <TextView
+                android:id="@+id/reci_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_shorttext"
+                android:layout_toRightOf="@id/reci_start"
+                android:gravity="right"
+                android:paddingTop="6dip" />
+
+            <TextView
+                android:id="@+id/reci_durationtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_start" />
+
+            <TextView
+                android:id="@+id/reci_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_start"
+                android:layout_toRightOf="@id/reci_durationtext"
+                android:paddingLeft="3dip" />
+
+            <TextView
+                android:id="@+id/reci_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_durationtext"
+                android:lineSpacingExtra="1dip"
+                android:paddingTop="6dip" />
+
+            <TableLayout
+                android:id="@+id/reci_infotable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_description"
+                android:paddingTop="12dip"
+                android:stretchColumns="1" />
+
+            <TextView
+                android:id="@+id/reci_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reci_infotable"
+                android:lineSpacingExtra="1dip"
+                android:paddingTop="6dip" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

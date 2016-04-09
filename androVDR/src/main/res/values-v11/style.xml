@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="header">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="footer" parent="header">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="header_light" parent="header" />
+
+    <style name="footer_light" parent="footer" />
+
+    <style name="detailsElementBackground_dark">
+        <item name="android:background">@drawable/panel_background_dark</item>
+    </style>
+
+    <style name="detailsElementBackground_light">
+        <item name="android:background">@drawable/panel_bg_holo_light</item>
+    </style>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="@string/settings_general">
+    <ListPreference
+      android:key="class"
+      android:title="@string/settings_class"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="name"
+      android:title="@string/settings_name"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="host"
+      android:title="@string/settings_host"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="port"
+      android:inputType="number"
+      android:title="@string/settings_port"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="user"
+      android:title="@string/settings_user"
+      android:defaultValue="" />
+    <EditTextPreference
+      android:key="password"
+      android:inputType="textPassword"
+      android:title="@string/settings_password"
+      android:defaultValue="" />
+  </PreferenceCategory>
+</PreferenceScreen>

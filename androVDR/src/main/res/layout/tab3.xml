@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  style="?body"
+  android:id="@+id/tab3"
+  android:tag="@string/remote_cut"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow>
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_media_rc1"
+        android:tag="Activity.de.androvdr.activities.RecordingsActivity" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_menu_linie_s"
+        android:tag="VDR.ok" />
+      <TextView
+        style="?spacerButton"
+        android:layout_weight="1" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/schere_48x48"
+        android:tag="VDR.2" />
+    </TableRow>
+  </TableLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" />
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow>
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_media_pause"
+        android:tag="VDR.pause" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_menu_play_clip"
+        android:tag="VDR.play" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_menu_play_stop"
+        android:tag="VDR.stop" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_menu_rec"
+        android:tag="VDR.record" />
+    </TableRow>
+    <TableRow>
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_media_rew"
+        android:tag="VDR.green" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_media_rev"
+        android:tag="VDR.fastrew" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_media_play"
+        android:tag="VDR.fastfwd" />
+      <ImageButton
+        style="?buttonLarge"
+        android:src="@drawable/ic_media_ff"
+        android:tag="VDR.yellow" />
+    </TableRow>
+  </TableLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" />
+  <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow>
+      <ImageButton
+        style="?buttonCut"
+        android:src="@drawable/ic_menu_next_links"
+        android:tag="VDR.7" />
+      <ImageButton
+        style="?buttonCut"
+        android:src="@drawable/ic_media_move_links"
+        android:tag="VDR.4" />
+      <ImageButton
+        style="?buttonCut"
+        android:src="@drawable/ic_menu_linie_set_new"
+        android:tag="VDR.0" />
+      <ImageButton
+        style="?buttonCut"
+        android:src="@drawable/ic_media_move_rechts"
+        android:tag="VDR.6" />
+      <ImageButton
+        style="?buttonCut"
+        android:src="@drawable/ic_menu_next_rechts"
+        android:tag="VDR.9" />
+    </TableRow>
+  </TableLayout>
+</LinearLayout>

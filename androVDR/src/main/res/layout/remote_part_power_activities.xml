@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip" >
+
+    <TableRow android:layout_weight="1" >
+
+        <de.androvdr.widget.SquareImageButton
+            style="?buttonPowerOn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.wol|VDR.wolinternet" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="Activity.de.androvdr.activities.EpgsdataActivity|VDR.schedule"
+            android:text="@string/remote_schedule" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="Activity.de.androvdr.activities.TimersActivity|VDR.timers"
+            android:text="@string/remote_timer" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="Activity.de.androvdr.activities.ChannelsActivity|VDR.channels"
+            android:text="@string/remote_channels" />
+
+        <de.androvdr.widget.TextResizeButton
+            style="?button"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tag="Activity.de.androvdr.activities.RecordingsActivity|VDR.recordings"
+            android:text="@string/remote_records" />
+
+        <de.androvdr.widget.SquareImageButton
+            style="?buttonPowerOff"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:tag="VDR.power" />
+    </TableRow>
+
+</TableLayout>

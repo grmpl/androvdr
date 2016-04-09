@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/rec_delete"
+        android:icon="@drawable/content_discard"
+        android:showAsAction="always"
+        android:title="@string/rec_delete"/>
+    <item
+        android:id="@+id/rec_play_start"
+        android:icon="@drawable/av_play_beginning"
+        android:showAsAction="always"
+        android:title="@string/rec_play_start"/>
+    <item
+        android:id="@+id/rec_play"
+        android:icon="@drawable/av_play"
+        android:showAsAction="always"
+        android:title="@string/rec_play"/>
+
+</menu>

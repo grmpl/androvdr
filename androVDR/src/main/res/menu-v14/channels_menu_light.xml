@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/cm_livetv"
+        android:icon="@drawable/av_stream_holo_light"
+        android:showAsAction="ifRoom"
+        android:title="@string/livetv"/>
+    <item
+        android:id="@+id/cm_record"
+        android:icon="@drawable/av_record_holo_light"
+        android:showAsAction="always"
+        android:title="@string/record"/>
+    <item
+        android:id="@+id/cm_overviewfull"
+        android:icon="@drawable/av_info_all_holo_light"
+        android:showAsAction="always"
+        android:title="@string/programoverviewfull"/>
+    <item
+        android:id="@+id/cm_overview"
+        android:icon="@drawable/av_info_holo_light"
+        android:showAsAction="always"
+        android:title="@string/programoverview"/>
+    <item
+        android:id="@+id/cm_switch"
+        android:icon="@drawable/av_play_holo_light"
+        android:showAsAction="always"
+        android:title="@string/switch_channel"/>
+
+</menu>

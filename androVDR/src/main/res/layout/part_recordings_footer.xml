@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recdiskstatus"
+    style="?footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <TextView
+        android:id="@+id/recdiskstatus_values"
+        style="?footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dip" />
+
+    <ProgressBar
+        android:id="@+id/recdiskstatus_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:indeterminate="false"
+        android:paddingBottom="4dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" />
+
+</LinearLayout>
