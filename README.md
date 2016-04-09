@@ -9,4 +9,4 @@ Some minor changes were made
 
 2) Default Port for svdrp was set to 6419 instead of 2001 - as used in actual VDR-versions.
 
-
+The compiled apk is included in directory androVDR.
