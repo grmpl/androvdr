@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'androvdr'
             keyPassword 'androvdr'
-            storeFile file('/home/cheffe/Android/Keystore/androvdr.jks')
+            storeFile file('~/Android/Keystore/androvdr.jks')
             storePassword 'androvdr'
         }
     }
@@ -20,6 +20,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            zipAlignEnabled true
         }
     }
     lintOptions {

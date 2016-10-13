@@ -23,4 +23,5 @@ dependencies {
     compile files('slf4j-api-1.7.21.jar')
     compile files('jsch-0.1.53.jar')
     compile files('acra-4.5.0.jar')
+    compile files('jzlib-1.1.3.jar')
 }
